@@ -20,8 +20,7 @@
     "dist": "link:../../../Projects/xact/dist",
     "gatsby": "^4.9.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "xact": "https://github.com/JosefHartsough/xact-components.git"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
