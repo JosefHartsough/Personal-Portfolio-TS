@@ -1,0 +1,14 @@
+.gridTesting {
+  display: grid;
+  width: 70%;
+  justify-items : center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 500px) {
+  .gridTesting {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}

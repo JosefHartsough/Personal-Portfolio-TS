@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 150px);
+  }
+  
+  .platforms{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+  }
+  

@@ -1,0 +1,161 @@
+
+.cardContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    transition: 0.2s;
+    max-width: 100%;
+    /* min-height: 250px; */
+  }
+  
+  @media (max-width: 800) {
+    .cardContainer {
+      min-width: 45%;
+      max-width: 50%;
+      margin-right: 15px;
+    }
+  }
+  
+  @media (max-width: 550px) {
+      .cardContainer {
+          max-width: 100%;
+      }
+  }
+  
+  /* 
+  @media (max-width: 550) {
+    .cardContainer {
+      flex-direction: column;
+      min-width: 100%;
+      max-width: 100%;
+      margin-right: unset;
+      min-height: 150px;
+    }
+  } */
+  .card {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-left: 5px solid rgb(32, 32, 32);
+    border-bottom: 5px solid rgb(32, 32, 32);
+    transition: 0.2s;
+  }
+  
+  @media (max-width: 550px) {
+    .card {
+      margin-bottom: 0px;
+      padding: 15px;
+    }
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    transition: 0.2s;
+  }
+  
+  .cardTitle {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .children {
+    cursor: default;
+    flex: 1;
+    padding-bottom: 20px;
+    margin: 0;
+    transition: 0.2s;
+  }
+  
+  @media (max-width: 550px) {
+    .card .children {
+      padding-bottom: 15px;
+    }
+  }
+  
+  .card .children p {
+    margin: 0;
+  }
+  
+  .card .foot {
+    font-size: 1.5rem;
+    width: 100%;
+    align-self: flex-end;
+    text-align: right;
+    transition: 0.2s;
+  }
+  
+  .card .foot a {
+    margin: 0;
+    margin-left: 10px;
+  }
+  
+  .folderOpen,
+  .folderClosed,
+  .cardTitle {
+    margin: 0;
+    transition: 0.2s;
+  }
+  .folderClosed {
+  }
+  .folderOpen {
+    display: none;
+    padding-left: 1px;
+  }
+  
+  .folderClosed:hover > .folderOpen {
+    display: inline;
+  }
+  
+  .cardContainer .card .foot {
+    font-size: 1.5rem;
+    width: 100%;
+    align-self: flex-end;
+    text-align: right;
+    transition: 0.2s;
+  }
+  .cardContainer .card .foot a {
+    margin: 0;
+    margin-left: 10px;
+  }
+  .cardContainer .card .foot a:hover {
+    color: steelblue;
+  }
+  .cardContainer .card .folderOpen,
+  .cardContainer .card .folderClosed,
+  .cardContainer .card .cardTitle {
+    margin: 0;
+    transition: 0.2s;
+  }
+  .cardContainer .card .folderOpen {
+    display: none;
+    padding-left: 1px;
+  }
+  .cardContainer .card:hover {
+    background-color: #fff;
+  }
+  .cardContainer .card:hover .head {
+    transition: 0.2s;
+  }
+  .cardContainer .card:hover .head .cardTitle {
+    margin-right: 10px;
+  }
+  .cardContainer .card:hover .folderOpen {
+    display: block;
+    margin-left: 0 !important;
+    color: steelblue !important;
+  }
+  .cardContainer .card:hover .folderClosed {
+    display: none;
+  }
+  

@@ -16,9 +16,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "diest": "link:../../../Projects/xact/diest",
+    "dist": "link:../../../Projects/xact/dist",
     "gatsby": "^4.9.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "xact": "https://github.com/JosefHartsough/xact-components.git"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",

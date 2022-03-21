@@ -1,0 +1,30 @@
+.navigationContainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition-timing-function: ease-in;
+}
+
+@media (max-width: 550px) {
+  .navigationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.listItem {
+  display: inline-block;
+  padding: 10px;
+}
+
+.listItem > a {
+  font-weight: 500;
+  font-size: 0.9em;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  color: #0b0b0c;
+}
