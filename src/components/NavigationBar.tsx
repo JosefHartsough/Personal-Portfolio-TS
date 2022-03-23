@@ -25,8 +25,7 @@ export default function NavigationBar() {
       {isVisible && (
         <div className={navigationStyles.navigationContainer}>
           <h1 onClick={() => navigate("/")} style={{ cursor: 'pointer', marginLeft: '20px' }} >JH</h1>
-          <div className={navigationStyles.listContainer}>
-            <ul>
+            <ul className={navigationStyles.listContainer}>
               <li className={navigationStyles.listItem}>
                 <Link to="/">HOME</Link>
               </li>
@@ -40,7 +39,6 @@ export default function NavigationBar() {
                 <a href="/blog">CONTACT ME</a>
               </li>
             </ul>
-          </div>
         </div>
       )}
     </div>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { NavBar } from "../components/NavBar";
 import NavigationBar from "../components/NavigationBar";
 import Header from "../components/Header";
 import { Skills } from "../components/SkillsSection";
@@ -10,7 +11,7 @@ import * as indexStyles from '../styles/Index/Index.module.css'
 // markup
 const IndexPage = () => {
   return (
-    <div>
+    <>
       <NavigationBar />
       <Header />
       <Skills />
@@ -19,10 +20,9 @@ const IndexPage = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "calc(100vh - 150px)",
           flexWrap: "wrap",
           flexDirection: "row",
-          maxHeight: 'calc(150vh - 150px)',
+          marginTop: '200px',
       
         }}
       >
@@ -62,7 +62,7 @@ const IndexPage = () => {
         </div>
       </div>
       <Footer />
-    </div>
+      </>
   );
 };
 

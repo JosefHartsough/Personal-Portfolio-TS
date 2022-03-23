@@ -71,13 +71,13 @@ export const Skills: React.FC = () => {
   )
 
   const TabPane = ({ children, tabIndex }: TabProps) => (
-    <div>
+    <>
       {tab[tabIndex]  && (
         <section className={styles.section}>
           <ul>{children}</ul>
         </section>
       )}
-    </div>
+      </>
   )
 
   return (

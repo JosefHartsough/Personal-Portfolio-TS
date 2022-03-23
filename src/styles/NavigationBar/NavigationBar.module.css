@@ -6,19 +6,38 @@
   top: 0;
   width: 100%;
   transition-timing-function: ease-in;
+  gap: 20px;
 }
 
 @media (max-width: 550px) {
   .navigationContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+.listContainer {
+  width: 40%;
+  height: 90%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 550px) {
+  .listContainer {
+    width: 90%;
   }
 }
 
 .listItem {
   display: inline-block;
-  padding: 10px;
 }
 
 .listItem > a {
