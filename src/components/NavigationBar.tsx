@@ -27,16 +27,16 @@ export default function NavigationBar() {
           <h1 onClick={() => navigate("/")} style={{ cursor: 'pointer', marginLeft: '20px' }} >JH</h1>
             <ul className={navigationStyles.listContainer}>
               <li className={navigationStyles.listItem}>
-                <Link to="/">HOME</Link>
+              <Link to="/about">ABOUT</Link>
               </li>
               <li className={navigationStyles.listItem}>
-                <Link to="/about">ABOUT ME</Link>
+                <Link to="/">PROJECTS</Link>
               </li>
               <li className={navigationStyles.listItem}>
-                <a href="/blog">PROJECTS</a>
+                <a href="/">RESUME</a>
               </li>
               <li className={navigationStyles.listItem}>
-                <a href="/blog">CONTACT ME</a>
+                <a href="mailto:josefhartsough@gmail.com">CONTACT ME</a>
               </li>
             </ul>
         </div>

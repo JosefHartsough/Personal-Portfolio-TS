@@ -13,6 +13,7 @@ export const FeaturedProjects: React.FC = () => {
         gap: '10px'
       }}
     >
+      <h1>Featured</h1>
         <div style={{ border: '2px solid', width: '800px', height: '30%' }}>
         Featured Projects placeholder
         </div>

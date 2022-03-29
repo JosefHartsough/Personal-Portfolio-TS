@@ -3,7 +3,8 @@ import { NavBar } from "../components/NavBar";
 import NavigationBar from "../components/NavigationBar";
 import Header from "../components/Header";
 import { Skills } from "../components/SkillsSection";
-import { FeaturedProjects } from "../components/FeaturedProjects";
+// import { FeaturedProjects } from "../components/FeaturedProjects";
+// import { FeatureCardRender } from "../components/FeatureCardRender";
 import { Projects } from "../components/Projects";
 import { Footer } from "../components/Footer";
 import * as indexStyles from '../styles/Index/Index.module.css'
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <NavigationBar />
       <Header />
       <Skills />
+      {/* <FeatureCardRender/> */}
       <div
         style={{
           display: "flex",
@@ -23,7 +25,6 @@ const IndexPage = () => {
           flexWrap: "wrap",
           flexDirection: "row",
           marginTop: '200px',
-      
         }}
       >
         <div
