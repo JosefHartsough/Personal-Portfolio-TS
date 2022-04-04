@@ -6,7 +6,7 @@ export default function NavigationBar() {
   const [isVisible, setIsVisible] = useState(true);
 
   const scrollNavBar = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 80) {
       setIsVisible(false);
     } else {
       setIsVisible(true);
@@ -24,7 +24,7 @@ export default function NavigationBar() {
     <div>
       {isVisible && (
         <div className={navigationStyles.navigationContainer}>
-          <h1 onClick={() => navigate("/")} style={{ cursor: 'pointer', marginLeft: '20px' }} >JH</h1>
+          <h1 onClick={() => navigate("/")} style={{ cursor: 'pointer', marginLeft: '10px' }} >JH</h1>
             <ul className={navigationStyles.listContainer}>
               <li className={navigationStyles.listItem}>
               <Link to="/about">ABOUT</Link>

@@ -5,31 +5,26 @@ import * as styles from '../styles/Skills/SkillsSection.module.css'
 import {
   SiJavascript,
   SiTypescript,
-  SiCsharp,
+  SiPython,
   SiJava,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
   SiSocketdotio,
-  SiMysql,
   SiGraphql,
-  SiMicrosoftsqlserver,
-  SiMongodb,
-  SiMariadbfoundation,
   SiAmazonaws,
-  SiMicrosoftazure,
   SiGithub,
   SiNetlify,
   SiNpm,
-  SiHeroku,
-  SiVercel
+  SiFlask,
+  SiVercel,
+  SiDjango,
+  SiDocker,
+  SiPostgresql
 } from 'react-icons/si'
-import { DiSass, DiDotnet, DiPostgresql } from 'react-icons/di'
+import { DiDotnet, DiPostgresql } from 'react-icons/di'
 import { RiGatsbyLine, RiHtml5Line, RiCss3Fill } from 'react-icons/ri'
-import { VscDatabase } from 'react-icons/vsc'
 import { GrMysql } from 'react-icons/gr'
-import { FaPhp } from 'react-icons/fa'
-import { IOType } from 'child_process'
 
 
 interface TabProps {
@@ -44,11 +39,6 @@ interface IconProps {
 
 export const Skills: React.FC = () => {
   const [tab, setTab] = useState<object>({1: true})
-
-//   useEffect(() => {
-//     onTabChange()
-//   }, [tab])
-  
 
   const Tab = ({ children, tabIndex }: TabProps) => (
     <li
@@ -109,22 +99,20 @@ export const Skills: React.FC = () => {
         <TabPane tabIndex='1'>
           <TabContent Icon={SiJavascript} name='JavaScript' />
           <TabContent Icon={SiTypescript} name='TypeScript' />
-          <TabContent Icon={SiCsharp} name='C Sharp' />
+          <TabContent Icon={SiPython} name='Python' />
           <TabContent Icon={SiJava} name='Java' />
-          <TabContent Icon={FaPhp} name='PHP' /> 
         </TabPane>
         <TabPane tabIndex='2'>
           <TabContent Icon={SiReact} name='React' />
+          <TabContent Icon={SiDjango} name='Django' />
           <TabContent Icon={SiNextdotjs} name='Next' />
           <TabContent Icon={RiGatsbyLine} name='Gatsby' />
           <TabContent Icon={RiHtml5Line} name='HTML' />
           <TabContent Icon={RiCss3Fill} name='CSS' />
-          <TabContent Icon={DiSass} name='SASS' />
         </TabPane>
         <TabPane tabIndex='3'>
-          <TabContent Icon={DiDotnet} name='ASP.NET' />
           <TabContent Icon={SiNodedotjs} name='Express.js' />
-          <TabContent Icon={GrMysql} name='SQL' />
+          <TabContent Icon={SiFlask} name='Flask' />
           <TabContent Icon={SiGraphql} name='GraphQL' />
           <TabContent Icon={SiSocketdotio} name='Socket.io' />
         </TabPane>
@@ -133,10 +121,9 @@ export const Skills: React.FC = () => {
         </TabPane>
         <TabPane tabIndex='5'>
           <TabContent Icon={SiAmazonaws} name='AWS' />
-          <TabContent Icon={SiMicrosoftazure} name='Azure' />
           <TabContent Icon={SiGithub} name='Github' />
           <TabContent Icon={SiNpm} name='NPM' />
-          <TabContent Icon={SiVercel} name='Vercel' />
+          <TabContent Icon={SiDocker} name='Docker' />
           <TabContent Icon={SiNetlify} name='Netlify' />
         </TabPane>
       </div>

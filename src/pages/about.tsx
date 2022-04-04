@@ -25,7 +25,7 @@ const AboutMe: React.FC = () => {
           <body>
             Bachelor of Science in Computer Science, Winter 2021<br></br>
             Grand Valley State University, Allendale, Michigan<br></br>
-            Deans List, 3.4GPA.
+            Deans List, 3.7GPA.
           </body>
           <h1>Experience</h1>
           <body>
