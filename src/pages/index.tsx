@@ -7,35 +7,58 @@ import FeatureCard from "../components/FeatureCard";
 import { Projects } from "../components/Projects";
 import { Footer } from "../components/Footer";
 import * as indexStyles from "../styles/Index/Index.module.css";
+import * as skillsStyles from "../styles/Skills/SkillsSection.module.css";
 import featuresData from "../data/projects.json";
 
 // markup
 const IndexPage = () => {
   const [features, setFeatures] = useState<any>(featuresData);
+  const FeatureCardRender = features.map((item, index) => {
+    if (index === 1) {
+      return (
+        <FeatureCard
+          projectTitle={item.projectTitle}
+          details={item.details}
+          stack={item.stack}
+          isReversed={true}
+        />
+      );
+    } else {
+      return (
+        <FeatureCard
+          projectTitle={item.projectTitle}
+          details={item.details}
+          stack={item.stack}
+          isReversed={false}
+        />
+      );
+    }
+  });
+
 
   return (
     <>
       <NavigationBar />
       <Header />
-      <h1 style={{ marginLeft: '220px'}}>Technology</h1>
+      <h1 style={{ textAlign: "center" }}>Technology</h1>
       <Skills />
-      <div style={{
-        marginTop: '100px'
-      }}>
-        <h1 style={{ marginLeft: '226px'}}>Featured</h1>
-      {features.map((item) => (
-        <div>
-          <br/>
+      <div
+        style={{
+          marginTop: "100px",
+        }}
+      >
+        <h1 style={{ textAlign: "center" }}>Featured</h1>
+        {FeatureCardRender}
+        {/* {features.map((item) => (
         <FeatureCard
           projectTitle={item.projectTitle}
           details={item.details}
           stack={item.stack}
+          isReversed={true}
         />
-        <br/>
-        </div>
-      ))}
+      ))} */}
       </div>
-      <h1 style={{ marginLeft: '180px'}}>Project Collection</h1>
+      <h1 style={{ textAlign: "center" }}>Project Collection</h1>
       <div
         style={{
           display: "flex",
@@ -44,6 +67,8 @@ const IndexPage = () => {
           flexWrap: "wrap",
           flexDirection: "row",
           marginTop: "40px",
+          // maxWidth: '80%',
+          margin: "auto",
         }}
       >
         <div className={indexStyles.gridTesting}>

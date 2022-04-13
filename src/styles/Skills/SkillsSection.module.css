@@ -151,4 +151,20 @@
     font-size: 2rem;
     margin-bottom: 10px;
   }
+
+  .projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    max-width: 80%;
+    margin: auto;
+  }
   
+  @media (max-width: 550){
+    .projectContainer{
+      max-width: 100%;
+    }
+  }
