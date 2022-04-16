@@ -24,10 +24,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   const [detailsAnimation, setDetailsAnimation] = useState<boolean>(false);
   const [onHoverLink, setOnHoverLink] = useState<boolean>(false);
 
-  useEffect(() => {
- console.log(isReversed)
-  }, [])
-  
 
   const Card = () => {
     return (
@@ -53,12 +49,12 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             width={400}
             height={226}
           />
-        <div>
           <div
             style={{
               display: "flex",
               alignItems: "flex-end",
               flexDirection: "column",
+              maxWidth: '95%'
             }}
           >
             <h2
@@ -131,7 +127,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               </a>
             </div>
           </div>
-        </div>
       </div>
     </div>
     )
@@ -161,6 +156,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
               display: "flex",
               alignItems: "flex-start",
               flexDirection: "column",
+               maxWidth: '85%'
             }}
           >
             <h2
@@ -180,8 +176,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             <div
               style={{
                 position: "relative",
-                right: detailsAnimation ? "-50px" : "-30px",
-                width: "400px",
+                left: detailsAnimation ? "50px" : "30px",
+                width: "380px",
                 borderRadius: "5px",
                 height: "70px",
                 zIndex: "2",

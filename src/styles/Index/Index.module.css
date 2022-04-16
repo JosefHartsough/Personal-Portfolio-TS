@@ -1,6 +1,6 @@
 .gridTesting {
   display: grid;
-  width: 70%;
+  width: 60%;
   justify-items : center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);

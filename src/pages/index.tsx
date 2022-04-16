@@ -20,7 +20,7 @@ const IndexPage = () => {
           projectTitle={item.projectTitle}
           details={item.details}
           stack={item.stack}
-          isReversed={true}
+          isReversed={false}
         />
       );
     } else {
@@ -49,14 +49,6 @@ const IndexPage = () => {
       >
         <h1 style={{ textAlign: "center" }}>Featured</h1>
         {FeatureCardRender}
-        {/* {features.map((item) => (
-        <FeatureCard
-          projectTitle={item.projectTitle}
-          details={item.details}
-          stack={item.stack}
-          isReversed={true}
-        />
-      ))} */}
       </div>
       <h1 style={{ textAlign: "center" }}>Project Collection</h1>
       <div
