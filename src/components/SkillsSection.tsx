@@ -72,6 +72,7 @@ export const Skills: React.FC = () => {
 
   return (
     <div className={styles.skillsSection}>
+      <h1 style={{ textAlign: "center" }}>Technology</h1>
       <div className={styles.skillsCont}>
         <ul className={styles.tabs}>
           <Tab tabIndex='1'>

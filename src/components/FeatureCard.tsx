@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { AiFillGithub } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import { reverse } from "dns";
 
 interface FeatureCardProps {
   projectTitle: string;
