@@ -1,0 +1,80 @@
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 500px) {
+  .cardContainer {
+    width: 50%;
+  }
+}
+
+.card {
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.cardProjectImage {
+  width: 400px;
+  height: 226px;
+}
+
+@media (max-width: 500px) {
+  .cardProjectImage {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.cardInfo {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  max-width: 95%;
+}
+
+.cardInfoReversed {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 85%;
+}
+
+.cardFeaturedProjectHeader {
+  margin: 1px;
+  padding: 5px;
+  color: #4682b4;
+  font-family: Roboto Mono, monospace;
+  letter-spacing: -0.5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.cardInfoProjectTitle {
+  margin: 5px;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
+.cardInfoTechStack {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.cardInfoTechStackText {
+  row-gap: 15px;
+  font-family: Roboto Mono, monospace;
+  font-weight: 2;
+}
+
+.cardInfoLinks {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}

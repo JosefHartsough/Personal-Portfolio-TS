@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import Header from "../components/Header";
 import { Skills } from "../components/SkillsSection";

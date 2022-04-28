@@ -12,7 +12,6 @@ export const ProjectsLayout: React.FC = () => {
         flexWrap: "wrap",
         flexDirection: "row",
         marginTop: "40px",
-        // maxWidth: '80%',
         margin: "auto",
       }}
     >

@@ -13,7 +13,6 @@ interface FeatureCardLayoutProps {
 }
 
 export const FeatureCardLayout: React.FC = () => {
-  // Change to correct type
   const [features, setFeatures] =
     useState<FeatureCardLayoutProps[]>(featuresData);
 
